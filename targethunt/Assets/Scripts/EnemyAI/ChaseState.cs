@@ -54,7 +54,6 @@ public class ChaseState : IEnemyState
         }
         else
         {
-            Debug.Log("Chase tilassa menetti pelaajan");
             enemy.lastKnownPlayerPos = enemy.chaseTarget.position;
             ToPatrolState();
         }

@@ -51,7 +51,6 @@ public class Health : MonoBehaviour
             // Muista ottaa syd‰mien animaattorista "Can transition to self" checkbox pois p‰‰lt‰.
             if (Mathf.Ceil(health) < i + 1)
             {
-                Debug.Log("toimiiko anim");
                 hearts[i].GetComponent<Animator>().SetTrigger("takedmg");
             }
         }
