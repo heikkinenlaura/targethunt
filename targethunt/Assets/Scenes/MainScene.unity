@@ -4150,6 +4150,7 @@ GameObject:
   - component: {fileID: 1672371614}
   - component: {fileID: 1672371616}
   - component: {fileID: 1672371615}
+  - component: {fileID: 1672371617}
   m_Layer: 5
   m_Name: MuteIcon
   m_TagString: Untagged
@@ -4214,6 +4215,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672371613}
   m_CullTransparentMesh: 1
+--- !u!114 &1672371617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672371613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71572c87df274444a91ac105cc205b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundOnIcon: {fileID: 1986851572}
+  soundOffIcon: {fileID: 1672371615}
 --- !u!1 &1695509151
 GameObject:
   m_ObjectHideFlags: 0
