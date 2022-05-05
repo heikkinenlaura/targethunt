@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     // Pidet‰‰n syd‰met taulukossa. **N‰m‰ pit‰‰ raahata Unityn Inspectorissa oikeisiin paikkoihin.
     // Eli kasvatat inspectorissa hearts taulun kokoa kolmeen ja raahaat syd‰met oikeille paikoilleen.**
     public GameObject[] hearts;
+    public GameObject panel;
 
     public float health;
 
@@ -57,8 +58,8 @@ public class Health : MonoBehaviour
         if (health <= 0f)
         {
             //SceneManager.LoadScene(3);
-            //Time.timeScale = 0;
-            Debug.Log("Ulos huvipuistosta"); 
+            Time.timeScale = 0;
+            panel.gameObject.SetActive(true);
         }
     }
 }
