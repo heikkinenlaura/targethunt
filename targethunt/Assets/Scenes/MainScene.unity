@@ -16836,23 +16836,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2063279119069713893, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
   m_PrefabInstance: {fileID: 2137565891}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1514409993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514409989}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2757926df94fb594c8ad45ec7dd5f61a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerTransform: {fileID: 9221361988612840339}
-  SmoothFactor: 0.5
-  LookAtPlayer: 0
-  RotateAroundPlayer: 1
-  RotationSpeed: 1
 --- !u!114 &1514409994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16866,7 +16849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 9221361988612840343}
-  speed: 1
+  speed: 5
 --- !u!1001 &1532799317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22918,7 +22901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2063279119069713893, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2063279119069713893, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22966,6 +22949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2063279119069713895, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
+    - {fileID: 2063279119069713890, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c72b668b3eb83646af50dda779979ff, type: 3}
 --- !u!1 &2138427157 stripped
 GameObject:
@@ -23518,8 +23502,8 @@ Transform:
   m_LocalPosition: {x: -8.2, y: 0.5, z: -49.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9221361989184417838}
   - {fileID: 1514409992}
+  - {fileID: 9221361989184417838}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23691,7 +23675,7 @@ Transform:
   - {fileID: 9221361989640922979}
   - {fileID: 7972873638927965730}
   m_Father: {fileID: 9221361988612840339}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &9221361989184417839
 CapsuleCollider:
