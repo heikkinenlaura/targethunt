@@ -20,5 +20,13 @@ public class PlayerMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+{
+            speed = 20f;
+        }
+        else
+        {
+            speed = 10f;
+        }
     }
 }
