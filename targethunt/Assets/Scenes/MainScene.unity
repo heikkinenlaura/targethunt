@@ -29646,13 +29646,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9221361988612840343}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &9221361988612840336
 MonoBehaviour:
@@ -29668,20 +29668,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 720
---- !u!114 &9221361988612840337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9221361988612840343}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b42e52281e50244947aeed7122bb32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 9221361988612840334}
-  jumpAmount: 10
 --- !u!33 &9221361988612840338
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29772,7 +29758,6 @@ GameObject:
   - component: {fileID: 9221361988612840338}
   - component: {fileID: 9221361988612840341}
   - component: {fileID: 9221361988612840340}
-  - component: {fileID: 9221361988612840337}
   - component: {fileID: 9221361988612840334}
   - component: {fileID: 9221361988612840336}
   - component: {fileID: 9221361988612840344}
