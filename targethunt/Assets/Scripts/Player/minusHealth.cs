@@ -10,7 +10,7 @@ public class minusHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Health.Instance.TakeDamage(1f);
+            Health.Instance.TakeDamage(0.7f);
             StartCoroutine(SpawnPlayer());
         }
     }
