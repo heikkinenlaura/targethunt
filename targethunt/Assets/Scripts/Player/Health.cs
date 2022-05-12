@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Health : MonoBehaviour
     public GameObject panel;
 
     public float health;
+    public TextMeshProUGUI timerText;
 
     // Tehd‰‰n t‰st‰ scriptist‰ Singleton, eli muista scripteist‰ voi t‰m‰n scriptin funktioihin
     // p‰‰st‰ k‰siksi esim: GameControlScript.Instance.TakeDamage(0.5f);
@@ -60,6 +62,7 @@ public class Health : MonoBehaviour
             //SceneManager.LoadScene(3);
             Time.timeScale = 0;
             panel.gameObject.SetActive(true);
+            timerText.text = "You died within: " + GetComponent<timer>().timerCount.ToString("0.00") + " seconds";
         }
     }
 }
