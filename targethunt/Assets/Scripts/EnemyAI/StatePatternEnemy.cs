@@ -12,6 +12,7 @@ public class StatePatternEnemy : MonoBehaviour
     public Transform eye;
     public MeshRenderer indicator;
     public Vector3 lastKnownPlayerPos;
+    public Animator anim;
 
     [HideInInspector] public Transform chaseTarget;
     [HideInInspector] public IEnemyState currentState;
@@ -33,6 +34,8 @@ public class StatePatternEnemy : MonoBehaviour
     private void Start()
     {
         currentState = patrolState;
+
+        anim = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()

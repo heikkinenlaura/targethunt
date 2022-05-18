@@ -61,6 +61,10 @@ public class ChaseState : IEnemyState
 
     void Chase()
     {
+
+        enemy.anim.SetBool("isWalking", false);
+        enemy.anim.SetBool("isWaving", false);
+        enemy.anim.SetBool("isRunning", true);
         enemy.indicator.material.color = Color.red;
 
         enemy.navMeshAgent.destination = enemy.chaseTarget.position;

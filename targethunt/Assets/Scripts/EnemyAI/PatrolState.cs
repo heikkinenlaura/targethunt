@@ -20,6 +20,7 @@ public class PatrolState : IEnemyState
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            enemy.anim.SetBool("isWaving", true);
             ToAlertState();
         }
     }
@@ -61,7 +62,10 @@ public class PatrolState : IEnemyState
         enemy.navMeshAgent.destination = enemy.waypoints[nextWaypoint].position;
         enemy.navMeshAgent.isStopped = false;
 
-        if(enemy.navMeshAgent.remainingDistance <= enemy.navMeshAgent.stoppingDistance && !enemy.navMeshAgent.pathPending)
+        enemy.anim.SetBool("isWalking", true);
+        enemy.anim.SetBool("isWaving", false);
+        enemy.anim.SetBool("isRunning", false);
+        if (enemy.navMeshAgent.remainingDistance <= enemy.navMeshAgent.stoppingDistance && !enemy.navMeshAgent.pathPending)
         {
             nextWaypoint = (nextWaypoint + 1) % enemy.waypoints.Length;
         }
