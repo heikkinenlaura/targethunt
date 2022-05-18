@@ -25,5 +25,14 @@ public class AnimationStateController : MonoBehaviour
             animator.SetBool("IsWalking", false);
         }
 
+        if (Input.GetKey("space"))
+        {
+            animator.SetBool("IsThrowing", true);
+        }
+
+        if (!Input.GetKey("space"))
+        {
+            animator.SetBool("IsThrowing", false);
+        }
     }
 }
