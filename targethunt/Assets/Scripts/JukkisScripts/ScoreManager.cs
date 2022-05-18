@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
             {
                 winScreen.gameObject.SetActive(true);
             }
+            Debug.Log("Voitit pelin");
 
         }
     }
