@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public float score = 0;
+    public GameObject winScreen;
 
     void OnCollisionEnter(Collision other)
     {
@@ -13,8 +14,9 @@ public class ScoreManager : MonoBehaviour
             score++;
             if (score == 10)
             {
-                Debug.Log("Voitit pelin");
+                winScreen.gameObject.SetActive(true);
             }
+
         }
     }
 }
